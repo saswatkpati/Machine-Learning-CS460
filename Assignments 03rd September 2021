@@ -1,0 +1,8 @@
+How to determine an optimal 'k' value, the number of clusters? (given we know the KMeans)
+Lets's say we have a hunch of a particular range of number of clusters that will be ideal. 
+Let's say it is somewhere between 2 to 20.
+Then, run the KMeans clustering with number of clusters as 2,3....20 with an additional function to compare the cost between these clusters.
+let's say we use the root mean square method (like used for gas particles in a chamber to derive gas laws) to calculate the sum of costs from centroid in KMeans to all the points in that cluster.
+Now we can compare these results. For small values of K the sum/cost will be very high, gas smolecules are too much scattered.
+for large values of K the molecules will be too much compacted.
+we should target for somwhere in between.
